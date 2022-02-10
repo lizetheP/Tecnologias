@@ -1,0 +1,901 @@
+﻿<!DOCTYPE doctype PUBLIC "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+                    
+     <meta content="es-mx" http-equiv="Content-Language" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+  <title>Calendario</title>
+                                 
+  <style type="text/css">
+
+
+
+
+
+.style1 {
+
+
+
+
+
+	border-width: 1px;
+
+
+
+
+
+}
+
+
+
+
+
+.style4 {
+
+
+
+
+
+	font-family: Arial;
+
+
+
+
+
+	font-weight: bold;
+
+
+
+
+
+	font-size: -1;
+
+
+
+
+
+	color: #FFFFFF;
+
+
+
+
+
+	text-align: center;
+
+
+
+
+
+}
+
+
+
+
+
+.Estilo13 {font-family: Arial, Helvetica, sans-serif; font-size: 14px; }
+
+
+
+
+
+.style6 {
+
+
+
+
+
+	font-family: Arial;
+
+
+
+
+
+	font-size: x-small;
+
+
+
+
+
+}
+
+
+
+
+
+.style8 {
+
+
+
+
+
+	margin-left: 40px;
+
+
+
+
+
+}
+
+
+
+
+
+.style12 {
+
+
+
+
+
+	border-left-color: #C0C0C0;
+
+
+
+
+
+	border-left-width: 1px;
+
+
+
+
+
+	border-right-width: 1px;
+
+
+
+
+
+	border-top-color: #C0C0C0;
+
+
+
+
+
+	border-top-width: 1px;
+
+
+
+
+
+	border-bottom-width: 1px;
+
+
+
+
+
+	background-color: #C0C0C0;
+
+
+
+
+
+	text-align: center;
+
+
+
+
+
+}
+
+
+
+
+
+.style13 {
+
+
+
+
+
+	font-weight: bold;
+
+
+
+
+
+	border-width: 1px;
+
+
+
+
+
+	background-color: #C0C0C0;
+
+
+
+
+
+}
+
+
+
+
+
+.style15 {
+
+
+
+
+
+	border-width: 1px;
+
+
+
+
+
+	text-align: center;
+
+
+
+
+
+	font-weight: bold;
+
+
+
+
+
+	background-color: #C0C0C0;
+
+
+
+
+
+}
+
+
+
+
+
+.style16 {
+
+
+
+
+
+	border-width: 1px;
+
+
+
+
+
+	text-align: center;
+
+
+
+
+
+	}
+
+
+
+
+
+.style19 {
+
+
+
+
+
+	font-family: Arial, Helvetica;
+
+
+
+
+
+	font-size: -1;
+
+
+
+
+
+}
+
+
+
+
+
+.style21 {
+
+
+
+
+
+	text-align: center;
+
+
+
+
+
+}
+
+
+
+
+
+.style22 {
+
+
+
+
+
+	font-family: Arial, Helvetica;
+
+
+
+
+
+	font-size: x-small;
+
+
+
+
+
+}
+
+
+
+
+
+.style23 {
+
+
+
+
+
+	font-weight: bold;
+
+
+
+
+
+	border-width: 1px;
+
+
+
+
+
+}
+
+
+
+
+
+.style24 {
+
+
+
+
+
+	text-align: left;
+
+
+
+
+
+}
+
+
+
+
+
+.style27 {
+
+
+
+
+
+	text-align: left;
+
+
+
+
+
+	font-family: Arial;
+
+
+
+
+
+	font-size: -1;
+
+
+
+
+
+}
+
+
+
+
+
+.style29 {
+
+
+
+
+
+	text-align: left;
+
+
+
+
+
+	font-family: Arial;
+
+
+
+
+
+	font-size: x-small;
+
+
+
+
+
+}
+
+
+
+
+
+.style30 {
+
+
+
+
+
+	font-family: Arial;
+
+
+
+
+
+	font-weight: bold;
+
+
+
+
+
+	font-size: -1;
+
+
+
+
+
+	color: #FFFFFF;
+
+
+
+
+
+	text-align: left;
+
+
+
+
+
+}
+
+
+
+
+
+.style31 {
+
+
+
+
+
+	border-width: 1px;
+
+
+
+
+
+	background-color: #C0C0C0;
+
+
+
+
+
+}
+
+
+
+
+
+.style32 {
+
+
+
+
+
+	border-width: 1px;
+
+
+
+
+
+	text-align: center;
+
+
+
+
+
+	background-color: #C0C0C0;
+
+
+
+
+
+}
+
+
+
+
+
+.style33 {
+
+
+
+
+
+	font-weight: normal;
+
+
+
+
+
+}
+
+
+
+
+
+.style34 {
+
+
+
+
+
+	font-family: Arial;
+
+
+
+
+
+}
+
+
+
+
+
+  .auto-style1 {
+	  color: #0000FF;
+  }
+
+
+
+
+
+  .auto-style2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: small;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .auto-style26 {
+	color: #000000;
+}
+    
+
+
+
+
+
+
+
+
+
+
+  *{box-sizing:inherit}
+  
+
+
+
+
+
+
+
+
+
+
+  .auto-style101 {
+	  text-align: center;
+	  border: 0px solid #000000;
+	  margin-left: 4px;
+	  margin-right: 4px;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .auto-style102 {
+	font-weight: bold;
+}
+.auto-style103 {
+	font-size: xx-small;
+	color: #FFFFFF;
+}
+
+
+
+
+
+  </style>
+</head>
+  <body>
+<center>
+<table border="1" width="90%">
+     <tbody>
+        <tr>
+     <td>                             
+                                  
+      <table border="0" cols="2" width="100%">
+     <tbody>
+              <tr>
+     <td width="53%">                                                   
+ 
+            <div align="right"><b><font face="Arial,Helvetica"><font
+ color="#330033"><font size="+1">Laboratorio 13. Archivos de texto&nbsp;</font></font></font></b></div>
+     </td>
+      <td><img src="imageCNR.JPG" height="119" width="122">
+                </td>
+     </tr>
+                                         
+        </tbody>                            
+      </table>
+                                  
+     </td>
+     </tr>
+                 
+  </tbody>    
+</table>
+    </center>
+          
+<center>    
+<table border="1" cols="1" width="90%">
+     <tbody>
+        <tr bgcolor="#330033">
+     <td><b><font face="Arial,Helvetica"><font color="#330033"><font
+ size="-2">.</font></font></font></b></td>
+     </tr>
+      <tr>
+     <td>
+      <img src="iobj.jpg" height="70" width="70" align="left">
+     <br>
+          <b><font face="Arial,Helvetica"><font color="#330033">Objetivos:</font></font></b> 
+        <br>
+      &nbsp;                             
+      <ul>
+                                         
+        <ul>
+     <li> <font face="Arial,Helvetica"><font color="#333333"><font
+ size="-1">Que desarrolles la habilidad de manipular <strong>archivos de texto</strong>.</font></font></font></li>
+			<li> <font
+ size="-1" color="#333333" face="Arial,Helvetica">Que ejercites la habilidad de 
+			hacer frente a los <strong>mensajes de error </strong>que envía la 
+			herramienta de desarrollo. </font></li>
+                                         
+        </ul>
+                                 
+      </ul>
+                                  
+      <hr width="100%"> 
+          <img src="iper.jpg" height="70" width="70" align="left">
+     <br>
+          <b><font face="Arial,Helvetica"><font color="#330033">Forma de 
+	  trabajo:</font></font></b>                              
+      <p><font face="Arial,Helvetica"><font color="#333333"><font
+ size="-1">Actividad individual</font></font></font> <br>
+     </p>
+                               
+      <hr width="100%"> 
+          <img src="ireloj.jpg" height="70" width="70" align="left">
+     <br>
+          <b><font face="Arial,Helvetica"><font color="#330033">Tiempo estimado:</font></font></b> 
+                             
+      <p><font face="Arial,Helvetica"><font color="#333333"><font
+ size="-1">90 minutos</font></font></font> </p>
+                               
+      <hr width="100%">                             
+          <font color="#330033" face="Arial,Helvetica">
+          <span class="auto-style45">
+           <font size="-1" face="Arial,Helvetica">
+                                  
+          <span class="auto-style103">.</span><span class="auto-style26"><br>
+                                  
+          <img src="web_descripcion.gif" height="61" width="66" align="left" class="auto-style101">&nbsp;
+     <br>
+	 
+	 	 </span>
+	  </font>
+	 </span>
+	 
+	 <span class="auto-style102">Ejercicios:</span><span class="auto-style26">
+	 
+	 	 </span>
+          </font>
+                   
+      <br>                             
+      <div style="margin-left: 40px;">                             
+      <ul>
+            &nbsp;<p><font face="Arial,Helvetica"><font size="-1">Construye un programa 
+		completo en C libre de warnings y errores, que incluya las siguientes 
+		funciones y /o procedimientos:</font></font> </p>
+                                       
+        <p><font face="Arial,Helvetica"><font size="-1"><b>1.-</b> El 
+		procedimiento llamado <b><font color="#3366ff">escribirEnArchivo</font></b>, 
+		que pida al usuario 5 oraciones o frases de menos de 50 caracteres cada 
+		frase y las guarde en un archivo de texto. Nombre del archivo: <b>
+		frases.txt</b>. El encabezado del procedimiento podría ser el siguiente:</font></font>         </p>
+                                       
+        <blockquote><b><font face="Arial,Helvetica"><font size="-1">void 
+			escribirEnArchivo ( )</font></font></b></blockquote>
+     <font face="Arial,Helvetica"><font size="-1"><b>2.-</b> La función 
+          <b><font color="#3366ff">cuentaConsonantes,</font></b> que regresa el 
+			número de consonantes contenidas en un archivo de texto. Nombre del<font face="Helvetica, Arial, sans-serif"> 
+			archivo a utilizar: </font></font></font><font
+ face="Helvetica, Arial, sans-serif" size="-1"><b>frases.txt</b>. El encabezado 
+			de la función podría ser&nbsp; la siguiente:</font>        
+                    <br>
+         <br>
+         
+        <ul>
+           <b><font face="Helvetica, Arial, sans-serif" size="-1">int 
+			cuentaConsonantes ( )</font></b>         
+        </ul>
+       
+      </ul>
+       
+      <ul>
+     <font face="Arial,Helvetica"><font size="-1"><b>3.-</b> Se desea almacenar 
+		  en un archivo de texto los siguientes datos de los alumnos del curso 
+		  de Computación: nombre, carrera y calificación final con el siguiente 
+		  formato: <b>Pedro IIS&nbsp; 95. 2. </b>Implementa el procedimiento <b><font
+ color="#3366ff">escribirConFormato</font></b>, que pide al usuario los datos 
+		  que se desean almacenar y los escribe en un archivo de texto. Nombre 
+		  del archivo: <b>calis.txt</b>. El encabezado del procedimiento es el 
+		  siguiente:</font></font>
+                                     
+        <blockquote><b><font face="Arial,Helvetica"><font size="-1">void 
+			escribirConFormato ( )</font></font></b>                                
+            
+          <p><font face="Arial,Helvetica"><font size="-1"><font
+ color="#000000">Recuerda que para este caso necesitas utilizar la funcion
+            </font><b><font color="#ff0000">fprintf()</font></b><font
+ color="#000000">, revisa el documento de power point para recordar su sintaxis.</font></font></font></p>
+            </blockquote>
+     <font face="Arial,Helvetica"><font size="-1"><b>4.-</b> El 
+		  procedimiento          <b><font color="#3366ff">leerConFormato</font></b>, 
+		  que lee los datos almacenados en el archivo de texto del ejercicio 
+		  anterior: 
+        <b>calis.txt</b>.&nbsp; Recuerda que debe hacerse una lectura con formato. El 
+		  encabezado del procedimiento es el siguiente:</font></font> 
+                                    
+        <blockquote><b><font face="Arial,Helvetica"><font size="-1">void 
+			leerConFormato ( )</font></font></b>                                    
+        
+          <p><font face="Arial,Helvetica"><font size="-1">R<font
+ color="#000000">ecuerda que para este caso necesitas utilizar la funcion
+            </font><b><font color="#ff0000">fscanf()</font></b><font
+ color="#000000">, revisa el documento de power point para recordar su sintaxis.</font></font></font></p>
+            </blockquote>
+     <font face="Arial,Helvetica"><font size="-1"><b>5.-</b> El procedimiento 
+		  <span class="auto-style1"><strong>menu</strong></span> que despligue el siguiente menú en pantalla:</font></font>                           
+         
+     
+              <b>
+			  <font
+ size="-1" color="#ff0000" face="Arial,Helvetica">
+                                 
+      </ul>
+		  		  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		  		  A. Escribir en archivo</font></b> <br>
+              <b><font
+ size="-1" color="#ff0000" face="Arial,Helvetica">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; B. Cuenta Consonantes</font></b> <br>
+              <b><font
+ size="-1" color="#ff0000" face="Arial,Helvetica">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; C. Guarda datos de alumnos</font></b> <br>
+              <b><font
+ size="-1" color="#ff0000" face="Arial,Helvetica">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; D. Muestra datos de alumnos</font></b> <br>
+              <b><font
+ size="-1" color="#ff0000" face="Arial,Helvetica">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; S. Salir</font></b> 
+ 
+ <br>
+    	  <ul>
+    	  <li class="auto-style2">Escribe el código necesario dentro del
+		  <span class="auto-style1"><strong>main</strong></span> para desplegar 
+		  el menú y brindarle al usuario la oportunidad de ejecutar cualquiera 
+		  de las funciones y procedimientos que han sido construidos. </li>
+		  <li><font size="-1" face="Arial,Helvetica">Utilizando el 
+			  ciclo do-while cicle el programa hasta que el usuario seleccione 
+			  opción de <b>Salir (S)</b>.</font></li>
+		  <li><font face="Arial,Helvetica"><font size="-1">
+		  <font
+ color="#000000"><font color="#993399"><b>Guarda tu laboratorio con el nombre:</b></font></font><font
+ color="#800080"> </font><b><font color="#3333ff">K_Matrícula.c&nbsp;</font></b></font></font></li>
+                                 
+      </ul>
+                       
+      <div align="center"><img src="../ascii-full.gif" alt=""
+ width="715" height="488">
+         <br>
+     </div>
+         </div>
+                                  
+      <hr width="100%"> 
+          <img src="idisco.jpg" height="70" width="70" align="left">
+     <br>
+          <b><font face="Arial,Helvetica"><font color="#330033">Forma de 
+	  entrega:</font></font></b>         <br>
+      &nbsp;                             
+      <ul>
+                                         
+        <ul>
+     <li> <font
+ size="-1" color="#333333" face="Arial,Helvetica">Formato de entrega:<strong> .c</strong></font></li>
+      <li> <font
+ size="-1" color="#333333" face="Arial,Helvetica">Nombre del entregable: <b>
+	  K_matrícula.c</b>.</font></li>
+      <li> <font
+ size="-1" color="#333333" face="Arial,Helvetica">Medio de entrega: Se entega en 
+	  Canvas en la sección de <strong>Laboratorio: Archivos</strong></font></li>
+                                         
+        </ul>
+                                 
+      </ul>
+		  </td>
+     </tr>
+                 
+  </tbody>    
+</table>
+    </center>
+          
+</body>
+</html>
