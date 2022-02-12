@@ -36,10 +36,9 @@ def llena_matriz_numeros(matriz):
 
 def menu():
     print()
-    print("1. Imprime matriz")
-    print("2. Llena matriz letras")
-    print("3. Llena matriz números")
-    print("4. Salir")
+    print("1. Llena matriz letras")
+    print("2. Llena matriz números")
+    print("3. Salir")
     
 def main():
     continua = True
@@ -50,14 +49,12 @@ def main():
         menu()
         opcion = int(input("Introduce una opcion: "))
         if opcion == 1:
-            imprime_matriz(matriz)
-        elif opcion == 2:
             llena_matriz_letras(matriz)
-            imprime_matriz(matriz)
-        elif opcion == 3:
+            imprime_matriz_letras(matriz)
+        elif opcion == 2:
             llena_matriz_numeros(matriz)
             imprime_matriz_numeros(matriz)
-        elif opcion == 4:
+        elif opcion == 3:
             print("Adios")
             continua = False
         else:
