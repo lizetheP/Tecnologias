@@ -1360,6 +1360,20 @@ article {
 
 
 
+  .auto-style99 {
+	color: #FF0000;
+}
+
+
+
+
+
+
+
+
+
+
+
   </style>
 </head>
   <body>
@@ -1476,101 +1490,131 @@ article {
 	  <ul>
                                          
         <ul>
-			<li> <font size="-1" color="#333333" face="Arial,Helvetica">La 
-			función <span class="auto-style87"><strong>escribir_en_archivo 
-			(nombre)</strong></span> que recibe el nombre del archivo de texto. 
-			La función deberá pedir al usuario tres oraciones o frases y las 
-			agregará en el archivo de texto. </font></li>
-			<li> <font size="-1" color="#333333" face="Arial,Helvetica">La 
-			función&nbsp;<span class="auto-style87"><strong>cuenta_caracteres 
-			(nombre) </strong></span>que recibe el nombre del archivo de texto y 
-			regrese el número de caracteres contenidos en el archivo de texto, 
-			sin incluir espacios en blanco y saltos de línea.</font></li>
-			<li> <font size="-1" color="#333333" face="Arial,Helvetica">La 
+			<li> <font size="-1" color="#333333" face="Arial,Helvetica">
+			<span class="auto-style26">La 
+			función</span> <strong><span class="auto-style87">esconde_en_archivo 
+			()</span></strong> <span class="auto-style26">que pide una frase al 
+			usuario y la modifica cambiando la letra por su inmediata siguiente 
+			en el abecedario y la agrega al archivo de texto <strong>
+			"secreto.txt"</strong>. </span> </font></span>
+            <ul>
+				<li class="auto-style6">
+				<font size="-1" color="#333333" face="Arial,Helvetica">
+				<span class="auto-style26"><strong>NOTA:</strong> Utiliza la 
+				función&nbsp;</span><span class="auto-style99"><strong>ord()&nbsp;</strong></span><span class="auto-style26">que 
+				toma un carácter como entrada y devuelve el número ordinal 
+				(valor ASCII) que está asociado con el carácter especificado. Si 
+				pasamos algún carácter no ASCII como&nbsp;ß&nbsp;a la función&nbsp;<strong>ord()</strong>, 
+				devolverá el valor Unicode ya que&nbsp;ß&nbsp;no es un carácter ASCII.
+				</span></font>
+				<ul>
+					<li class="auto-style6">
+					<font size="-1" color="#333333" face="Arial,Helvetica">
+					<span class="auto-style26">El siguiente código de ejemplo 
+					demuestra cómo utilizar la función&nbsp;<strong>ord()&nbsp;p</strong>ara 
+					obtener el valor ASCII de un carácter:&nbsp; </span></font>
+					<ul>
+						<li class="auto-style6">
+						<font size="-1" color="#333333" face="Arial,Helvetica">
+						<span class="auto-style26">&gt;&gt;&gt; <strong>ord</strong>("a")
+						</span></font></li>
+						<li class="auto-style6">
+						<font size="-1" color="#333333" face="Arial,Helvetica">
+						<span class="auto-style26">97 </span></font></li>
+					</ul>
+					</li>
+					<li class="auto-style6">
+					<font size="-1" color="#333333" face="Arial,Helvetica">
+					<span class="auto-style26">Para recobrar un carácter a 
+					partir de su ordinal, se emplea</span><span class="auto-style99">&nbsp;<strong>chr()</strong></span><span class="auto-style26">.
+					</span></font>
+					<ul>
+						<li class="auto-style6">
+						<font size="-1" color="#333333" face="Arial,Helvetica">
+						<span class="auto-style26">&gt;&gt;&gt; <strong>chr</strong>(97)
+						</span></font></li>
+						<li class="auto-style6">
+						<font size="-1" color="#333333" face="Arial,Helvetica">
+						<span class="auto-style26">'a'</span></font><span class="auto-style6"><font color="#330033" face="Arial,Helvetica"><span class="auto-style26"><font size="-1" face="Arial,Helvetica">
+						</font></span></font></li>
+					</ul>
+					</li>
+				</ul>
+				</li>
+			</ul>
+			</li>
+        </ul>
+		  <ul>
+			  <li><font color="#330033" face="Arial,Helvetica">
+			  <span class="auto-style26"><span class="auto-style6">
+			  <font size="-1" color="#333333" face="Arial,Helvetica">La 
 			función <strong><span class="auto-style87">cuenta_consonantes 
 			(nombre)</span></strong> que recibe el nombre del archivo de texto y 
-			regrese el número de consonantes contenidas en un archivo de texto. </font></li>
-			<li> <font size="-1" color="#333333" face="Arial,Helvetica">La 
-			función <span class="auto-style87"><strong>copia_archivo (nombre_o, 
-			nombre_d)&nbsp;</strong></span>que recibe el nombre del archivo de texto 
+			regrese el número de consonantes contenidas en un archivo de texto. 
+			  </font></span></span></font></li>
+			  <li><font size="-1" color="#333333" face="Arial,Helvetica">
+			  <span class="auto-style26">La 
+			función </span><span class="auto-style87"><strong>copia_archivo (nombre_o, 
+			nombre_d)&nbsp;</strong></span><span class="auto-style26">que recibe el nombre del archivo de texto 
 			origen y el nombre del archivo de texto destino. La función debe 
 			copiar todo el contenido del archivo origen al archivo destino, cuyo 
 			contenido final será la conversión de los caracteres a mayúsculas de 
-			cada uno de los caracteres del archivo de origen. </font></li>
-			<li> <font size="-1" color="#333333" face="Arial,Helvetica">La 
-			función <span class="auto-style87"><strong>imprime_archivo (nombre)</strong></span> 
-			que recibe el nombre del archivo de texto y muestra en pantalla el 
-			contenido del archivo de texto. </font></li>
-			<li> 
-          <font color="#330033" face="Arial,Helvetica">
-        <span class="auto-style26">
-		  <span class="auto-style6">
-			<font size="-1" color="#333333" face="Arial,Helvetica">La 
-			función <span class="auto-style87"><strong>escribe_con_formato (nombre)</strong></span> 
-			que recibe el nombre del archivo de texto. La función deberá pedir 
+			cada uno de los caracteres del archivo de origen. </span></font>
+			  </li>
+			  <li><font color="#330033" face="Arial,Helvetica">
+			  <span class="auto-style26"><span class="auto-style6">
+			  <font size="-1" color="#333333" face="Arial,Helvetica">La 
+			función <span class="auto-style87"><strong>captura_alumnos (n)</strong></span> 
+			que recibe el número <strong>n</strong> de alumnos. La función deberá pedir 
 			al usuario <strong>nombre</strong>, <strong>apellido1 </strong>y
-			<strong>apellido2</strong> de cinco alumnos con el siguiente 
+			  <strong>apellido2</strong> de los<strong> n</strong> alumnos, con el siguiente 
 			formato: PEDRO LOPEZ SUAREZ. La función deberá pedir los datos de 
 			los alumnos a almacenar y los escribirá en un archivo de texto 
-			llamado <strong>alumnos.txt</strong>.&nbsp; </font></span>
-          </span> 
-          </font>
-        	</li>
-			<li> 
-          <font color="#330033" face="Arial,Helvetica">
-        <span class="auto-style26">
-		  <span class="auto-style6">
-			<font size="-1" color="#333333" face="Arial,Helvetica">La 
-			función <span class="auto-style87"><strong>busca_apellido (nombre, 
-			apellido)</strong></span> 
-			que recibe el nombre de un archivo de texto y el apellido a buscar 
-			de los alumnos. El archivo de texto guarda los nombres de los 
-			alumnos con el siguiente formato: <strong>nombre apellido1 apellido2</strong>. 
-			La función deberá imprimir todos los alumnos (nombre apellido1 
+			llamado <strong>alumnos.txt</strong>.&nbsp; </font></span></span>
+			  </font></li>
+			  <li><font color="#330033" face="Arial,Helvetica">
+			  <span class="auto-style26"><span class="auto-style6">
+			  <font size="-1" color="#333333" face="Arial,Helvetica">La 
+			función <span class="auto-style87"><strong>busca_apellido (apellido)</strong></span> 
+			que recibe el apellido a buscar 
+			  en el archivo de texto de <strong>alumnos.txt</strong>. La función deberá imprimir todos los alumnos (nombre apellido1 
 			apellido2) que coincidan con el apellido buscado. </font></span>
-          </span> 
-          </font>
-        	</li>
-			<li> <font size="-1" color="#333333" face="Arial,Helvetica">La 
-			función <span class="auto-style87"><strong>menu ()</strong></span> 
-			que despliegue el siguiente menú en pantalla: </font></li>
-        </ul>
+			  </span></font></li>
+			  <li><font size="-1" color="#333333" face="Arial,Helvetica">
+			  <span class="auto-style26">La 
+			función <strong>menu ()</strong> 
+			que despliegue el siguiente menú en pantalla: </span></font></li>
+		  </ul>
                                  
       </ul>
 	 <p class="auto-style98">
-	 <font size="-1" face="Arial,Helvetica"><strong><span class="auto-style45">1. Escribir en 
-	 archivo </span></strong> </font></span>
+	 <font size="-1" face="Arial,Helvetica"><strong><span class="auto-style45">1. Esconde 
+	 en archivo </span></strong> </font></span>
           <strong><br class="auto-style45">
 	 </strong>
 	 <class="auto-style98">
         <span class="auto-style26">
-	 <font size="-1" face="Arial,Helvetica"><strong><span class="auto-style45">2. Cuenta caracteres</span></strong></font><strong><font color="#330033" face="Arial,Helvetica"><span class="auto-style6"><font size="-1" face="Arial,Helvetica"><span class="auto-style45"> </span> </font></span>
-          <br class="auto-style45">
+	 <strong><font color="#330033" face="Arial,Helvetica">
 	 <class="auto-style98">
-        <font size="-1" face="Arial,Helvetica"><span class="auto-style45">3. Cuenta consonantes
+        <font size="-1" face="Arial,Helvetica"><span class="auto-style45">2. Cuenta consonantes
 	 </span>
 	 </font><br class="auto-style45">
 	 <class="auto-style98">
-	 <font size="-1" face="Arial,Helvetica"><span class="auto-style45">4. Copia archivo
+	 <font size="-1" face="Arial,Helvetica"><span class="auto-style45">3. Copia archivo
 	 </span>
 	 </font>
           </font>
         <br class="auto-style45">
 	 </strong>
 	 <class="auto-style98">
+	 <font size="-1" face="Arial,Helvetica"><strong><span class="auto-style45">4. 
+	 Captura alumnos
+	 </span></strong>
+	 </font><strong><br class="auto-style45">
+	 </strong>
+	 <class="auto-style98">
+	 <class="auto-style98">
 	 <font size="-1" face="Arial,Helvetica"><strong><span class="auto-style45">5. 
-	 Imprime archivo
-	 </span></strong>
-	 </font><strong><br class="auto-style45">
-	 </strong>
-	 <class="auto-style98">
-	 <font size="-1" face="Arial,Helvetica"><strong><span class="auto-style45">6. 
-	 Escribe con formato
-	 </span></strong>
-	 </font><strong><br class="auto-style45">
-	 </strong>
-	 <class="auto-style98">
-	 <font size="-1" face="Arial,Helvetica"><strong><span class="auto-style45">7. 
 	 Busca apellido
 	 </span></strong>
 	 </font><strong><br class="auto-style45">
@@ -1578,7 +1622,7 @@ article {
 	 
 	 <class="auto-style98">
 	 <class="auto-style98">
-	 <font size="-1" face="Arial,Helvetica"><strong><span class="auto-style45">8. Salir 
+	 <font size="-1" face="Arial,Helvetica"><strong><span class="auto-style45">6. Salir 
 	 </span></strong> </font></p>
 	 <ul>
                                          
@@ -1651,6 +1695,10 @@ article {
 			<li> 
 			<p class="auto-style68">
 			<a href="../presentaciones/12_Archivos.pptx">12. Archivos de texto</a></p>
+			</li>
+			<li> 
+			<p class="auto-style68">
+			<img height="488" src="../Semana13/ascii-full.gif" width="715"></p>
 			</li>
                                          
         </ul>
