@@ -1427,6 +1427,26 @@ article {
 
 
 
+  .auto-style110 {
+	font-size: small;
+	text-align: left;
+}
+.auto-style111 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: small;
+	font-weight: normal;
+}
+
+
+
+
+
+
+
+
+
+
+
   </style>
 </head>
   <body>
@@ -1792,7 +1812,8 @@ article {
                                          
          <ul>
 			<li> <font size="-1" color="#333333" face="Arial,Helvetica">La 
-			función&nbsp;<span class="auto-style87"><strong>guarda_datos () </strong></span>
+			función&nbsp;<span class="auto-style87"><strong>guarda_datos (nombre, 
+			edad, direccion, telefono) </strong></span>
 			que recibe el <strong>nombre</strong>, <strong>edad</strong>, 
 			<strong>dirección</strong> y <strong>teléfono</strong> de un usuario. La 
 			función deberá regresar un <strong>diccionario</strong> con los datos dados por el 
@@ -1906,12 +1927,12 @@ article {
          <ul>
 			<li> <font size="-1" color="#333333" face="Arial,Helvetica">
 			<span class="auto-style26">La 
-			función </span><strong><span class="auto-style87">calcula_precio 
+			función </span><strong><span class="auto-style87">calcula_costo 
 			(diccionario, fruta, kilos)</span></strong> 
 			<span class="auto-style26">que recibe un <strong>diccionario</strong> 
 			con los datos de los precios de las frutas de la tabla, el nombre de 
 			una <strong>fruta</strong> y el número de <strong>kilos</strong>. La 
-			función deberá calcular el precio de ese número de kilos de fruta. 
+			función deberá calcular el costo total de ese número de kilos de fruta. 
 			Si la fruta no está en el diccionario deberá mostrar un mensaje 
 			informando de ello.</span></font></li>
         </ul>
@@ -1961,7 +1982,7 @@ article {
 		 esa fruta.</font><li><font face="Arial,Helvetica" size="-1">
 		 <strong>Output: &lt;kilos&gt; </strong>kilos de
 		 <strong>&lt;fruta&gt; </strong>cuestan
-		 <strong>&lt;precio&gt;</strong> pesos. Si la fruta no está en el diccionario 
+		 <strong>&lt;costo&gt;</strong> pesos. Si la fruta no está en el diccionario 
 		 deberá mostrar el siguiente mensaje: "Lo siento, esta fruta no está 
 		 disponible". </font>
 	 </ul>
@@ -2179,7 +2200,7 @@ article {
 			que <span>cree un diccionario vacío y lo vaya llenado con 
 			información sobre una persona (por ejemplo nombre, edad, sexo, 
 			teléfono, correo electrónico, etc.) que se le pida al usuario. Cada 
-			vez que se añada un nuevo dato debe imprimirse el contenido del 
+			vez que se añada un nuevo dato se debe imprimir el contenido del 
 			diccionario.</span></font></li>
         </ul>
                                  
@@ -2204,7 +2225,7 @@ article {
 	 <font size="-1" color="#333333" face="Arial,Helvetica">
 	
 		 <li><font face="Arial,Helvetica" size="-1">
-		 <strong>Input: </strong>Se pregunta si se desea agregar más información 
+		 <strong>Input: </strong>Se pregunta si desea agregar más información 
 		 (Si / No).&nbsp; Se solicita el dato y su valor hasta que el usuario 
 		 introduce No.</font></li>
           </font>
@@ -2492,12 +2513,45 @@ article {
         </span>
           </font>
 	 		La función deberá regresar el diccionario con los datos de los 
-			 artículos comprados. 
-			</font></li>
+			 artículos comprados.&nbsp; En el main se debe imprimir el 
+			 diccionario final.</font></li>
+        </ul>
+                                 
+      </ul>
+	
+	 <p class="auto-style99"><font face="Arial,Helvetica" class="auto-style49">
+	 <font face="Arial,Helvetica" size="-1">
+	 <strong>Caso de prueba:</strong></font></font></p>
+	 <ul class="auto-style99">
+		 <li><font face="Arial,Helvetica" size="-1">
+		 <strong>Input:</strong> Número de opción (5. lista_compras() ) </font></li>
+		 <li><font face="Arial,Helvetica" size="-1">
+		 <strong>Input: </strong>Nombre del artículo.
+		 </font></li>
+		 <li><font face="Arial,Helvetica" size="-1">
+		 <strong>Input:</strong> Precio del artículo.</font><li><font face="Arial,Helvetica" size="-1">
+		 <strong>Output: </strong>Se imprime el contenido del diccionario. </font>
+          	
+		 <li><font face="Arial,Helvetica" size="-1">
+		 <strong>Input: </strong>Se pregunta si desea agregar otro artículo 
+		 (Si / No).&nbsp; Se solicita el nombre del artículo y su precio hasta que el usuario 
+		 introduce No.</font></li>
+	 </ul>
+	 <p>
+          <font color="#330033" face="Arial,Helvetica">
+        <span class="auto-style26">
+		  <span class="auto-style6">
+	 <font size="-1" color="#333333" face="Arial,Helvetica">
+	
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+	 <img height="287" src="img33.gif" width="572"></font></span></span></font></p>
+	 <ul>
+                                         
+         <ul>
 			 <li> La <font size="-1" color="#333333" face="Arial,Helvetica">
 			 función <span class="auto-style87"><strong>imprime_compras 
 			 (diccionario) </strong></span>que recibe el diccionario creado en 
-			 la función lista_compras() y muestra en pantalla la lista de las 
+			 la función<strong> lista_compras() </strong>y muestra en pantalla la lista de las 
 			 compras y el costo total, con el siguiente formato:</font></li>
         </ul>
                                  
@@ -2506,34 +2560,38 @@ article {
 	 <table class="auto-style99">
 		 <thead>
 			 <tr>
-				 <th class="auto-style6" style="text-align: left">Lista de 
+				 <th class="auto-style111" style="text-align: left">Lista de 
 				 compras</th>
 				 <th style="text-align: right"></th>
 			 </tr>
 		 </thead>
 		 <tr class="auto-style21">
 			 <td class="auto-style101" style="text-align: left">Artículo 1</td>
-			 <td class="auto-style101" style="text-align: right">Precio</td>
+			 <td class="auto-style110">Precio</td>
 		 </tr>
 		 <tr class="auto-style21">
 			 <td class="auto-style101" style="text-align: left">Artículo 2</td>
-			 <td class="auto-style101" style="text-align: right">Precio</td>
+			 <td class="auto-style110">Precio</td>
 		 </tr>
 		 <tr class="auto-style21">
 			 <td class="auto-style101" style="text-align: left">Artículo 3</td>
-			 <td class="auto-style101" style="text-align: right">Precio</td>
+			 <td class="auto-style110">Precio</td>
 		 </tr>
 		 <tr class="auto-style21">
-			 <td class="auto-style101" style="text-align: left">…</td>
-			 <td class="auto-style101" style="text-align: right">…</td>
+			 <td class="auto-style101" style="text-align: left; height: 34px;">…</td>
+			 <td class="auto-style101" style="text-align: right; height: 34px;">…</td>
 		 </tr>
 		 <tr class="auto-style21">
-			 <td class="auto-style101" style="text-align: left">Total</td>
-			 <td class="auto-style101" style="text-align: right">Costo</td>
+			 <td class="auto-style101" style="text-align: left">TOTAL:</td>
+			 <td class="auto-style101" style="text-align: right">Costo total </td>
 		 </tr>
 	 </table>
 	 </p>
-	 <p class="auto-style99"><img height="472" src="img32.gif" width="650"></p>
+	 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 <strong>&nbsp;Ejemplo:&nbsp;&nbsp; </strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 </p>
+	 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 <img height="140" src="img34.gif" width="199"></p>
 	 <ul>
                                          
 		 <ul>
@@ -2576,8 +2634,14 @@ article {
 	 </font><strong><br class="auto-style45">
 	 </strong>
 	 <class="auto-style98">
+	 <font size="-1" face="Arial,Helvetica"><strong><span class="auto-style45">6. 
+	 Imprime compras
+	 </span></strong>
+	 </font><strong><br class="auto-style45">
+	 </strong>
 	 <class="auto-style98">
-	 <font size="-1" face="Arial,Helvetica"><strong><span class="auto-style45">6. Salir 
+	 <class="auto-style98">
+	 <font size="-1" face="Arial,Helvetica"><strong><span class="auto-style45">7. Salir 
 	 </span></strong> </font></p>
 	 <ul>
                                          
